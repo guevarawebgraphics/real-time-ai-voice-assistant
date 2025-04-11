@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# PABS: Your Real-Time AI Voice Assistant (Inspired by Jarvis)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **PABS (Personal Assistant with Brain & Speech)** — a cutting-edge, real-time AI voice assistant built with **React.js**, **Tailwind CSS**, and **WebRTC**, and powered by **OpenAI's GPT-4o Realtime API**.
 
-## Available Scripts
+Just like _Jarvis_ from Iron Man, PABS listens, thinks, and responds — all in real time.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎙️ **Real-time Speech Recognition** using Web Speech API
+- 🧠 **OpenAI GPT-4o Realtime Integration** via WebRTC
+- 🗣️ **Live Audio Streaming + AI Response Generation**
+- 💬 **Transcription Display with Live Typing Effect**
+- 🧵 **Conversation History Log with Role-based Styling**
+- 🎨 **Responsive UI** built with **Tailwind CSS**
+- 📱 **Mobile-ready interface**
+- 🛠️ **Modular, Component-based React Architecture**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧱 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React.js, Tailwind CSS
+- **AI**: OpenAI GPT-4o Realtime API
+- **Voice & Audio**: WebRTC, Web Speech API
+- **Icons**: Font Awesome
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+/src
+  ├── components
+  │   ├── IndexPage.jsx      # Main DAX Page
+  │   ├── NavBar.jsx         # Top Navigation
+  │   └── BottomNav.jsx      # Bottom Navigation
+  ├── index.css              # Tailwind CSS Directives
+  ├── App.js                 # App Entry Point
+  └── index.js               # Root Renderer
+/public
+  └── index.html             # HTML Shell
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the Repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/your-username/pabs-ai-assistant.git
+cd pabs-ai-assistant
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+### 3. Set Environment Variables
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a `.env` file in the root with your OpenAI API key:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+REACT_APP_OPENAI_API_KEY=sk-xxx-your-api-key-xxx
+```
 
-### Code Splitting
+### 4. Run the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+Visit `http://localhost:3000` in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 💡 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Click the **microphone button** to start recording.
+- Speak naturally — your words will be transcribed in real time.
+- PABS sends audio + page context to OpenAI GPT-4o.
+- AI responds with live speech and onscreen transcript.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📷 Screenshots
 
-### Deployment
+> _Add screenshots or GIFs here showing real-time transcription and response._
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🧪 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ✅ Whisper fallback for transcription accuracy
+- ✅ Voice selection (e.g., Jarvis, Friday, etc.)
+- ✅ Persistent conversation logs (via Firebase / Supabase)
+- ✅ Commands for smart device control / APIs
+
+---
+
+## 🤖 Credits
+
+- Developed by [Your Name / Team]
+- Powered by [OpenAI GPT-4o](https://openai.com)
+- Inspired by _Jarvis_ from Marvel’s Iron Man
+
+---
+
+## 📄 License
+
+MIT License. Use freely, build boldly.
+
+---
+
+> "PABS isn't just a chatbot — it's your real-time AI co-pilot."
