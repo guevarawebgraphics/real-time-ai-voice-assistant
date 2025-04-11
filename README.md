@@ -104,7 +104,7 @@ Visit `http://localhost:3000` in your browser.
 
 ## 🤖 Credits
 
-- Developed by [Your Name / Team]
+- Developed by Richard Guevara
 - Powered by [OpenAI GPT-4o](https://openai.com)
 - Inspired by _Jarvis_ from Marvel’s Iron Man
 
