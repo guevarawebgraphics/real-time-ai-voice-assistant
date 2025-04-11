@@ -33,7 +33,7 @@ Just like _Jarvis_ from Iron Man, PABS listens, thinks, and responds — all in 
 ```
 /src
   ├── components
-  │   ├── IndexPage.jsx      # Main DAX Page
+  │   ├── IndexPage.jsx      # Main PABS Page
   │   ├── NavBar.jsx         # Top Navigation
   │   └── BottomNav.jsx      # Bottom Navigation
   ├── index.css              # Tailwind CSS Directives
