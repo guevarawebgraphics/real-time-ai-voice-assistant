@@ -6,6 +6,13 @@ Just like _Jarvis_ from Iron Man, PABS listens, thinks, and responds — all in 
 
 ---
 
+
+
+https://github.com/user-attachments/assets/b4201b36-945b-4c99-b104-42b59825bd99
+
+
+
+
 ## 🚀 Features
 
 - 🎙️ **Real-time Speech Recognition** using Web Speech API
