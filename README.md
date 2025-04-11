@@ -6,12 +6,7 @@ Just like _Jarvis_ from Iron Man, PABS listens, thinks, and responds — all in 
 
 ---
 
-
-
 https://github.com/user-attachments/assets/b4201b36-945b-4c99-b104-42b59825bd99
-
-
-
 
 ## 🚀 Features
 
@@ -41,8 +36,6 @@ https://github.com/user-attachments/assets/b4201b36-945b-4c99-b104-42b59825bd99
 /src
   ├── components
   │   ├── IndexPage.jsx      # Main PABS Page
-  │   ├── NavBar.jsx         # Top Navigation
-  │   └── BottomNav.jsx      # Bottom Navigation
   ├── index.css              # Tailwind CSS Directives
   ├── App.js                 # App Entry Point
   └── index.js               # Root Renderer
@@ -57,7 +50,7 @@ https://github.com/user-attachments/assets/b4201b36-945b-4c99-b104-42b59825bd99
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/pabs-ai-assistant.git
+git clone https://github.com/your-username/real-time-ai-voice-assistant.git
 cd pabs-ai-assistant
 ```
 
