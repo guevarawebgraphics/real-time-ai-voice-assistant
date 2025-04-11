@@ -89,7 +89,7 @@ Visit `http://localhost:3000` in your browser.
 
 ## 📷 Screenshots
 
-> _Add screenshots or GIFs here showing real-time transcription and response._
+![image](https://github.com/user-attachments/assets/d8b81fab-872f-4e2b-a869-670197b71486)
 
 ---
 
