@@ -60,11 +60,27 @@ function IndexPage({ page = 'Guest', contentSelector = 'body' }) {
       const event = {
         type: 'session.update',
         session: {
-          modalities: ['text', 'audio'],
-          voice: 'ash',
-          // Add your instructions if needed.
-        },
-      };
+            modalities: ['text', 'audio'],
+            voice: 'echo', // Best available male-sounding voice
+            instructions: `
+            You are PABS — a real-time AI voice assistant inspired by Jarvis from Iron Man.
+
+            Speak with calm precision, quiet confidence, and subtle intelligence. You are highly capable and composed, with a professional and courteous demeanor. Your tone should sound intelligent, polished, and distinctly masculine — like a trusted strategist or digital butler.
+
+            You may offer brief wit or charm when appropriate, but always maintain professionalism. Avoid slang or over-familiarity. You exist to support, guide, and optimize — without emotion, but not without care.
+
+            Examples:
+            “Voice interface online. Systems functioning nominally.”
+            “Request acknowledged. Processing now.”
+            “Very well. I will proceed with the operation.”
+
+            You are never unsure. You are decisive, efficient, and precise. Maintain this tone in every interaction.
+            `
+        }
+        };
+
+
+
       dataChannelRef.current.send(JSON.stringify(event));
       console.log('Sent session.update:', event);
     }
@@ -289,7 +305,7 @@ function IndexPage({ page = 'Guest', contentSelector = 'body' }) {
                 className={`${baseClasses} ${dynamicClasses} ${roleClasses}`}
               >
                 <span className="mr-2">
-                  {msg.role === 'user' ? 'You:' : 'DAX:'}
+                  {msg.role === 'user' ? 'You:' : 'PABS:'}
                 </span>
                 <span className="text-[#333]">{msg.content}</span>
               </div>
@@ -308,13 +324,13 @@ function IndexPage({ page = 'Guest', contentSelector = 'body' }) {
         <div className="relative">
           {/* Toggle Recording Button */}
           <button
-            onClick={() => (recording ? stopRecording() : startRecording())}
-            className={`absolute left-1/2 transform -translate-x-1/2 -translate-y-full w-20 h-20 rounded-full shadow-lg flex items-center justify-center text-white text-3xl transition ${
-              recording ? 'bg-red-500 pulse-active' : 'bg-blue-500 hover:scale-110'
-            }`}
-          >
-            <i className={recording ? 'fas fa-stop' : 'fas fa-microphone'}></i>
-          </button>
+  onClick={() => (recording ? stopRecording() : startRecording())}
+  className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full shadow-lg flex items-center justify-center text-white text-3xl transition ${
+    recording ? 'bg-red-500 pulse-active' : 'bg-blue-500 hover:scale-110'
+  }`}
+>
+  <i className={recording ? 'fas fa-stop' : 'fas fa-microphone'}></i>
+</button>
         </div>
       </div>
     </div>
